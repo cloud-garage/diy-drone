@@ -4,6 +4,8 @@ A DIY drone - built from scratch
 ## About
 This is a students project. Our intention is to give anybody a chance to build their own drone (almost) from scratch. And we do it 'cause it's fun.
 
+Discord: [discord.gg/NDfW2e7](https://discord.gg/NDfW2e7)
+
 ## Project
 The project is divided into multiple sections/subfolders:
 

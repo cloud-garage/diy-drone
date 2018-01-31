@@ -11,8 +11,7 @@ The project is divided into multiple sections/subfolders:
 * __CODE__: software for the µ-controller
 * __BODY__: 3D-printable files (body, etc.)
 * __APP__: mobile app for controlling the drone
-* __TOOLS__: tools and manuals for parts
-* __OTHER__: build guide and part list
+* __OTHER__: build guide, manuals, tools and part list
 
 ## Contribution
 You have a great idea or found an issue? Fork our repository or go to the issues tab. We're always open for improvements.

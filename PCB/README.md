@@ -1,7 +1,7 @@
 # DIY-DRONE PCB
 Altium project files for the circuit board
 
-## Import to Altium
+## Import Libraries to Altium
 
 ### ArduinoNano Library
 
@@ -19,3 +19,13 @@ Add Footprint:
 2. Double-click on _"Footprint"_ in the _"Models"_-subwindow
 3. Under _"PCB Library > Library path"_ choose `ARDUINO_NANO.PcbLib`
 4. Done
+
+### Miscellaneous Connectors Library
+
+Add Library:
+
+1. Copy `diy-drone/PCB/Libraries/Miscellaneous Connectors/` to your Altium library folder (Windows: `C:\Users\Public\Documents\Altium\AD17\Library`)
+2. Go to _"Design > Add/Remove Library..."_
+3. Go to _"Install > Install from file..."_
+4. Choose `Miscellaneous Connectors.IntLib`
+5. Done

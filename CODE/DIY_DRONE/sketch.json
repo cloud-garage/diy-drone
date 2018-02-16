@@ -1,0 +1,1 @@
+{"cpu":{"architecture":"avr","build":[{"flavour":"atmega168","fqbn":"arduino:avr:nano:cpu=atmega168"},{"flavour":"atmega328","fqbn":"arduino:avr:nano:cpu=atmega328"}],"default_flavour":"atmega328","fqbn":"arduino:avr:nano:cpu=atmega328","href":"/builder/v2/boards/arduino:avr:nano","name":"Arduino Nano","com_name":null,"flavour":"atmega328","unknown":false},"secrets":[]}

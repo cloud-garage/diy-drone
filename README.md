@@ -1,6 +1,6 @@
 ![DIY-DRONE Banner](https://raw.githubusercontent.com/cloud-garage/diy-drone/master/OTHER/banner.png)
 
-# DIY-DRONE
+# DIY-DRONE [IN WORK]
 A DIY drone - built from scratch
 
 ## About

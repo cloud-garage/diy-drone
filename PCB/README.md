@@ -1,6 +1,10 @@
 # DIY-DRONE PCB
 Altium project files for the circuit board
 
+## Schematics
+
+![Schematics](https://raw.githubusercontent.com/cloud-garage/diy-drone/master/PCB/schematics.png)
+
 ## Import Libraries to Altium
 
 ### ArduinoNano Library

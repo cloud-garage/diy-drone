@@ -11,8 +11,14 @@ class Gyrosensor
 {
     private:
 
-        const uint8_t SDA;
-        const uint8_t SCL;
+        /**
+         * the gyrosensor uses the two serial ports from the Arduino
+         * SDA: A4
+         * SCL: A5
+         */
+        
+        const uint8_t m_SDA_Pin = A4;
+        const uint8_t m_SCL_Pin = A5;
 
     public:
 

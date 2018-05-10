@@ -25,7 +25,6 @@ void setup()
 {
     Serial.begin(9600);
     while(!Serial);
-    mh.enable();
     Scheduler.startLoop(manual_steering);
     Scheduler.startLoop(ultrasonic);
     Scheduler.startLoop(gyrosensor);
@@ -44,10 +43,10 @@ void manual_steering()
      * for testing purposes only
      */
 
-    mh.still();
+    mh.Levitate();
     Serial.println("cw");
     delay(1000);
-    mh.right();
+    mh.Right();
     Serial.println("ccw");
     delay(1000);
     Scheduler.yield();

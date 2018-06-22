@@ -1,5 +1,6 @@
 #include "Gyrosensor.h"
 
-Gyrosensor::Gyrosensor() {
+Gyrosensor::Gyrosensor() 
+{
     
 }

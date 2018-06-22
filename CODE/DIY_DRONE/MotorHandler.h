@@ -2,6 +2,7 @@
  * TODO:
  *      - finish implementing steering functions
  *      - control accelaration when steering manually
+ *      - callibrate m_RefSpeed
  */
 
 #ifndef MotorHandler_H
@@ -15,25 +16,24 @@ class MotorHandler
     private:
 
         /**
-         * The standard motor speed STD_SPEED is callibrated,
+         * The standard/reference motor speed m_RefSpeed is callibrated,
          * to make the drone stand still in the air.
-         * Its
          */
 
-        const int STD_SPEED = 255;
+        const int m_RefSpeed = 255;
 
         /**
          * create Motor objects with two input pins each
-         * FL = front left
-         * FR = front right
-         * BL = back left
-         * BR = back right
+         * m_FL = front left
+         * m_FR = front right
+         * m_BL = back left
+         * m_BR = back right
          */
         
-        Motor FL = Motor(9, 10);
-        Motor FR = Motor(A0, A1);
-        Motor BL = Motor(A2, A3);
-        Motor BR = Motor(A6, A7);
+        Motor m_FL = Motor(9, 10);
+        Motor m_FR = Motor(A0, A1);
+        Motor m_BL = Motor(A2, A3);
+        Motor m_BR = Motor(A6, A7);
         
     public:
         
@@ -44,21 +44,21 @@ class MotorHandler
         MotorHandler();
 
         /**
-         * each steering function sets each motor objects
+         * each steering function sets each motor object
          * to get the desired reult
          * 
-         * e.g: still():
+         * e.g: Levitate():
          *      FL and BR rotate clockwise
-         *      FR and BL rotate counntercw
+         *      FR and BL rotate countercw
          *      => the drone stand still in the air,
-         *      if STD_SPEED is callibrated correctly
+         *      if m_RefSpeed is callibrated correctly
          */
 
-        void still();
-        void forward();
-        void backward();
-        void left();
-        void right();
+        void Levitate();
+        void Forward();
+        void Backward();
+        void Left();
+        void Right();
 };
 
 #endif

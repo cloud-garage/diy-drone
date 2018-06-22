@@ -13,17 +13,17 @@ class Motor
         
         /**
          * each motor has 2 connections:
-         *      CW_PIN = clockwise
-         *      CCW_PIN = countercw
+         *      m_CW_Pin = clockwise
+         *      m_CCW_Pin = countercw
          * 
          * e.g.
-         *      CW_PIN      HIGH
-         *      CCW_PIN     LOW
+         *      m_CW_Pin      HIGH
+         *      m_CCW_Pin     LOW
          *      => motor rotates clockwise
          */
 
-        const uint8_t CW_PIN;
-        const uint8_t CCW_PIN;
+        const uint8_t m_CW_Pin;
+        const uint8_t m_CCW_Pin;
 
         /**
          * SPEED is the current speed of the motor
@@ -31,7 +31,7 @@ class Motor
          * by the MotorHandler.
          */
 
-        int SPEED;
+        int m_Speed = 0;
 
     public:
 
@@ -42,12 +42,12 @@ class Motor
         Motor(uint8_t cw_pin, uint8_t ccw_pin);
         
         /**
-         * cw() sets the rotation to clockwise
-         * ccw() setst the rotation to countercw
+         * CW() sets the rotation to clockwise
+         * CCW() setst the rotation to countercw
          */
         
-        void cw(int speed);
-        void ccw(int speed);
+        void CW(int speed);
+        void CCW(int speed);
 };
 
 #endif

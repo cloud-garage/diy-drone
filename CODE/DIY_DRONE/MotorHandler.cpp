@@ -1,35 +1,42 @@
 #include "MotorHandler.h"
 
-MotorHandler::MotorHandler() {
-}
-
-void MotorHandler::still() {
-    Serial.println("MotorHandler::still()");
-    FL.cw(STD_SPEED);
-    FR.ccw(STD_SPEED);
-    BL.ccw(STD_SPEED);
-    BR.cw(STD_SPEED);
-}
-
-void MotorHandler::forward() {
+MotorHandler::MotorHandler()
+{
 
 }
 
-void MotorHandler::backward() {
+void MotorHandler::Levitate()
+{
+    Serial.println("MotorHandler::Levitate()");
+    m_FL.CW(m_RefSpeed);
+    m_FR.CCW(m_RefSpeed);
+    m_BL.CCW(m_RefSpeed);
+    m_BR.CW(m_RefSpeed);
+}
+
+void MotorHandler::Forward()
+{
 
 }
 
-void MotorHandler::left() {
-    FL.cw(STD_SPEED);
-    FR.cw(STD_SPEED);
-    BL.cw(STD_SPEED);
-    BR.cw(STD_SPEED);
+void MotorHandler::Backward()
+{
+
 }
 
-void MotorHandler::right() {
-    Serial.println("MotorHandler::right()");
-    FL.ccw(STD_SPEED);
-    FR.ccw(STD_SPEED);
-    BL.ccw(STD_SPEED);
-    BR.ccw(STD_SPEED);
+void MotorHandler::Left()
+{
+    m_FL.CW(m_RefSpeed);
+    m_FR.CW(m_RefSpeed);
+    m_BL.CW(m_RefSpeed);
+    m_BR.CW(m_RefSpeed);
+}
+
+void MotorHandler::Right()
+{
+    Serial.println("MotorHandler::Right()");
+    m_FL.CCW(m_RefSpeed);
+    m_FR.CCW(m_RefSpeed);
+    m_BL.CCW(m_RefSpeed);
+    m_BR.CCW(m_RefSpeed);
 }
